@@ -1,4 +1,7 @@
 
+
+---
+
 ````markdown
 # 🔍 Site Keyword Scanner
 
@@ -24,39 +27,40 @@ Matches are saved to a timestamped CSV file in a `csv/` folder.
 ## 🛠 Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/jatuAbdullah/site-keyword-scanner.git
-cd site-keyword-scanner
+
+   ```bash
+   git clone https://github.com/jatuAbdullah/site-keyword-scanner.git
+   cd site-keyword-scanner
 ````
 
 2. Install the required Python packages:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Contents of `requirements.txt`:
+   **Contents of `requirements.txt`:**
 
-```text
-requests
-beautifulsoup4
-python-docx
-PyPDF2
-```
+   ```text
+   requests
+   beautifulsoup4
+   python-docx
+   PyPDF2
+   ```
 
 ---
 
 ## 🚀 Usage
 
-### Basic Command:
+### Basic Command
 
 ```bash
 python3 site_keyword_scanner.py <URL> <keyword1> <keyword2> ...
 ```
 
-### Examples:
+---
 
-#### 🔹 Scan a **single page or file only**
+### 🔹 Scan a **single page or file only**
 
 ```bash
 python3 site_keyword_scanner.py https://example.com neosoft --single
@@ -66,7 +70,9 @@ python3 site_keyword_scanner.py https://example.com neosoft --single
 * Supports `.html`, `.pdf`, `.docx`, and `.txt`
 * Ignores all internal links
 
-#### 🔹 Scan a **full website**
+---
+
+### 🔹 Scan a **full website**
 
 ```bash
 python3 site_keyword_scanner.py https://example.com neosoft innovation
@@ -75,7 +81,9 @@ python3 site_keyword_scanner.py https://example.com neosoft innovation
 * Crawls links within the same domain
 * Matches keywords across all pages and supported files
 
-#### 🔹 With depth limit and page count
+---
+
+### 🔹 With depth limit and page count
 
 ```bash
 python3 site_keyword_scanner.py https://example.com neosoft --max-depth 2 --max-pages 50
@@ -149,5 +157,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
 
 ```
