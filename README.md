@@ -1,6 +1,3 @@
-Here’s an updated and detailed `README.md` with **clear instructions on how to run the tool**, including all command-line options like `--single`, `--max-depth`, and `--max-pages`.
-
----
 
 ````markdown
 # 🔍 Site Keyword Scanner
